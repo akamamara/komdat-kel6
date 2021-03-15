@@ -1,0 +1,4 @@
+/.idea
+/build
+/docker/mysql
+.DS_Store
