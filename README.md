@@ -2,7 +2,7 @@
 Hasil project UTS mata kuliah Komunikasi Data dan Jaringan
 
 ## Sekilas Tentang
-
+Paste adalah suatu aplikasi berbasis web yang memungkinkan para usernya untuk bisa berbagi kode program, teks biasa (plain text) ataupun hal lain yang berwujud teks. Paste dibangun menggunakan bahasa PHP. Paste ini merupakan salinan versi asli dari pastebin.com sebelum akhirnya dijual pada tahun 2010.
 
 ## Instalasi
 ### Kebutuhan Sistem
@@ -115,6 +115,30 @@ Maintenance lain di atas hanya digunakan untuk pengamatan saja, sedangkan di bag
 ## Otomatisasi
 
 ## Cara Pemakaian
+Jika ingin mencobanya langsung bisa klik [di sini](https://paste.thareeq.id/). 
+### Landing Page
+Saat dibuka, Anda akan langsung diarahkan ke landing page. 
+![User - Landing Page](A)
+### Register
+Jika sudah memiliki akun, anda bisa langsung login. Jika belum punya akun, maka anda harus register terlebih dahulu.
+![User - Register]()
+### Login
+Setelah akun selesai dibuat, silahkan login dengan memasukkan username dan password yang benar. Jika lupa password Anda bisa klik "Forgot Password?".
+![User - Login](B)
+### Halaman Utama
+Setelah login, Anda akan langsung diarahkan ke halaman utamanya. Di sini Anda bisa langsung menuliskan kode program lalu menyimpannya. Di sini pula, Anda bisa mengatur judul Paste, jenis text, tanggal kedaluarsa, visibilitas, password, dan opsi enkripsi atau tidak.
+![User - Halaman Utama - Kosong](C)
+Setelah diisi, klik "Paste" untuk menyimpan.
+![User - Halaman Utama - Isi]()
+### List Paste
+Di ujung kanan atas halaman utama terdapat username Anda yang jika diklik akan memunculkan menu Pastes, Settings, dan Logout.
+![User - Halaman Utama - Username]()
+Jika menu "Paste" diklik, Anda akan diarahkan ke laman daftar Paste yang anda miliki.
+![User- Pastes]()
+### Profile
+Jika menu "Settings diklik Anda akan diarahkan ke laman Profile Anda. Di sini anda bisa mengganti password Anda.
+![User - Profile](D)
+
 
 ## Pembahasan
 
