@@ -94,7 +94,7 @@ Digunakan untuk melihat data administrasi user.
 ![Configuration - Users](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20066%20-%20Paste%20-%20Users%20-%20paste.thareeq.id.png)
 ### IP Bans
 Digunakan untuk menolak user menggunakan alamat IP yang digunakan.
-![Configuration - IP Bans]()
+![Configuration - IP Bans](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/Web%20capture_16-3-2021_172152_paste.thareeq.id.jpeg)
 ### Statistics
 Digunakan untuk memantau aktivitas yang terjadi di dalam situs
 ![Configuration - Statistics](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20069%20-%20Paste%20-%20Statistics%20-%20paste.thareeq.id.png)
