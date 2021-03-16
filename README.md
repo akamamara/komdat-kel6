@@ -118,26 +118,26 @@ Maintenance lain di atas hanya digunakan untuk pengamatan saja, sedangkan di bag
 Jika ingin mencobanya langsung bisa klik [di sini](https://paste.thareeq.id/). 
 ### Landing Page
 Saat dibuka, Anda akan langsung diarahkan ke landing page. 
-![User - Landing Page](A)
+![User - Landing Page](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-A.png)
 ### Register
 Jika sudah memiliki akun, anda bisa langsung login. Jika belum punya akun, maka anda harus register terlebih dahulu.
-![User - Register]()
+![User - Register](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-E.png)
 ### Login
 Setelah akun selesai dibuat, silahkan login dengan memasukkan username dan password yang benar. Jika lupa password Anda bisa klik "Forgot Password?".
-![User - Login](B)
+![User - Login](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-B.png)
 ### Halaman Utama
 Setelah login, Anda akan langsung diarahkan ke halaman utamanya. Di sini Anda bisa langsung menuliskan kode program lalu menyimpannya. Di sini pula, Anda bisa mengatur judul Paste, jenis text, tanggal kedaluarsa, visibilitas, password, dan opsi enkripsi atau tidak.
-![User - Halaman Utama - Kosong](C)
+![User - Halaman Utama - Kosong](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-C.png)
 Setelah diisi, klik "Paste" untuk menyimpan.
-![User - Halaman Utama - Isi]()
+![User - Halaman Utama - Isi](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-F.png)
 ### List Paste
 Di ujung kanan atas halaman utama terdapat username Anda yang jika diklik akan memunculkan menu Pastes, Settings, dan Logout.
-![User - Halaman Utama - Username]()
+![User - Halaman Utama - Username](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-G.png)
 Jika menu "Paste" diklik, Anda akan diarahkan ke laman daftar Paste yang anda miliki.
-![User- Pastes]()
+![User- Pastes](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-H.png)
 ### Profile
 Jika menu "Settings diklik Anda akan diarahkan ke laman Profile Anda. Di sini anda bisa mengganti password Anda.
-![User - Profile](D)
+![User - Profile](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/screencapture-paste-thareeq-id-D.png)
 
 
 ## Pembahasan
