@@ -4,6 +4,63 @@ Hasil project UTS mata kuliah Komunikasi Data dan Jaringan
 ## Sekilas Tentang
 
 ## Instalasi
+### Kebutuhan Sistem
+* Apache 2.X / Nginx
+* PHP 5.3.7 (or later) with php-openssl & GD enabled [PHP7.+ recommended]
+* MySQL 5.x+
+### Proses Instalasi
+1. Login ke dalam server menggunakan SSH. Disini kami menggunakan aplikasi mobaxterm.
+```
+$ ssh -p 2222 student@127.0.0.1
+```
+2. Install seluruh kebutuhan sistem yang diperlukan
+```
+$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt-get update
+$ sudo apt install nginx
+$ sudo apt install mysql-server
+$ sudo apt install php7.3 php7.3-fpm php7.3-mysql
+```
+3. Konfigurasi awal database
+```
+$ sudo mysql_secure_installation
+```
+4. Buat user serta database baru untuk Paste
+```
+$ sudo mysql
+CREATE DATABASE paste;
+GRANT ALL PRIVILEGES ON *.* TO 'akamamara'@'localhost' IDENTIFIED BY '213465@#Qw';
+```
+5. Konfigurasi nginx
+```
+$ sudo apt update
+$ sudo apt install php-fpm
+```
+6. Modifikasi beberapa konfigurasi dalam file `/etc/nginx/sites-available/default`
+```
+...
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+...
+```
+```
+index index.php index.html index.htm index.nginx-debian.html;
+```
+```
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+}
+location ~ /\.ht {
+    deny all;
+}
+```
+7. Lakukan restart untuk service NGINX
+```
+$ sudo systemctl restart nginx.service
+```
+8. Upload seluruh file ke dalam direktori kita
 
 ## Konfigurasi
 
