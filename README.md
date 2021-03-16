@@ -3,15 +3,17 @@ Hasil project UTS mata kuliah Komunikasi Data dan Jaringan
 
 ![PASTE](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/logo.png)
 
+
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 ## Sekilas Tentang
 [`^gulir ke atas^`](#)
+
 Paste adalah suatu aplikasi berbasis web yang memungkinkan para usernya untuk bisa berbagi kode program, teks biasa (plain text) ataupun hal lain yang berwujud teks. Paste dibangun menggunakan bahasa PHP. Paste ini merupakan salinan versi asli dari pastebin.com sebelum akhirnya dijual pada tahun 2010.
 
 ## Instalasi
 [`^gulir ke atas^`](#)
+
 ### Kebutuhan Sistem
 * Apache 2.X / Nginx
 * PHP 5.3.7 (or later) with php-openssl & GD enabled [PHP7.+ recommended]
@@ -73,6 +75,7 @@ $ sudo systemctl restart nginx.service
 
 ## Konfigurasi
 [`^gulir ke atas^`](#)
+
 Konfigurasi aplikasi, seluruhnya berada di dalam menu Configuration. Terdapat banyak hal yang bisa diatur di sini: site info, permissions, captcha settings dan mail settings.
 
 ### Site Info
@@ -91,6 +94,7 @@ Terakhir di menu Configuration, Mail Settings, hal-hal yang berkaitan dengan adm
 
 ## Maintenance
 [`^gulir ke atas^`](#)
+
 Perawatan sistem dapat dilakukan dengan sangat mudah. Seluruh menu telah tersedia di dalam satu laman. Hal-hal yang bisa dilakukan diantaranya: Interface, Pastes, Users, IP Bans, Statistics, Ads, Pages, Sitemap, Task
 ### Interface
 Digunakan untuk mengatur bahasa dan tema yang digunakan pada situs.
@@ -126,6 +130,7 @@ Maintenance lain di atas hanya digunakan untuk pengamatan saja, sedangkan di bag
 
 ## Cara Pemakaian
 [`^gulir ke atas^`](#)
+
 Jika ingin mencobanya langsung bisa klik [di sini](https://paste.thareeq.id/). 
 ### Landing Page
 Saat dibuka, Anda akan langsung diarahkan ke landing page. 
@@ -153,6 +158,7 @@ Jika menu "Settings diklik Anda akan diarahkan ke laman Profile Anda. Di sini an
 
 ## Pembahasan
 [`^gulir ke atas^`](#)
+
 ## Referensi
 * [ComputerForGeeks - Install PHP 7.3 on Ubuntu 18.04 / Ubuntu 16.04 / Debian](https://computingforgeeks.com/how-to-install-php-7-3-on-ubuntu-18-04-ubuntu-16-04-debian/)
 * [GitHub - Paste 2.2](https://github.com/jordansamuel/PASTE)
