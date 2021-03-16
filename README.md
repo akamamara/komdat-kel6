@@ -63,6 +63,22 @@ $ sudo systemctl restart nginx.service
 8. Upload seluruh file ke dalam direktori kita
 
 ## Konfigurasi
+Konfigurasi aplikasi, seluruhnya berada di dalam menu Configuration. Terdapat banyak hal yang bisa diatur di sini: site info, permissions, captcha settings dan mail settings.
+
+
+Di bagian Site info, ada banyak hal yang berkaitan dengan informasi situs yang bisa diatur.
+![Configuration - Site info](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20051%20-%20Paste%20-%20Configuration%20-%20localhost.png)
+
+
+Di bagian Permissions, Berkaitan dengan perizinan penggunaan situs, apakah user harus punya akun dulu atau tidak sebelum bisa menggunakan Paste bisa diatur di sini.
+![Configuration - Permissions](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20054%20-%20Paste%20-%20Configuration%20-%20localhost.png)
+
+
+Di bagian Captcha, jika ingin menambahkan keamanan pada saat login, Captcha beserta pengaturannya bisa diaktifkan di bagian ini.
+![Configuration - Captcha](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20057%20-%20Paste%20-%20Configuration%20-%20localhost.png)
+
+Terakhir di menu Configuration, Mail Settings, hal-hal yang berkaitan dengan administrasi email user bisa diatur di sini.
+![Configuration - Mail Settings](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20060%20-%20Paste%20-%20Configuration%20-%20paste.thareeq.id.png)
 
 ## Maintenance
 
