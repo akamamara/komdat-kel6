@@ -159,6 +159,20 @@ Jika menu "Settings diklik Anda akan diarahkan ke laman Profile Anda. Di sini an
 ## Pembahasan
 [`^gulir ke atas^`](#)
 
+PASTE ditulis dalam bahasa pemrograman PHP yang support dengan penggunaan MySQL. Paste merupakan hasil fork dari pastebin.com sebelum akhirnya dijual pada tahun 2010. Aplikasi ini memiliki kelebihan, diantaranya:
+* Build-in berbagai macam highlighting code sehingga enak dipandang mata
+* Tampilannya simple dan tidak ribet
+* Flexible untuk maintenance dan konfigurasi web yang diinginkan
+* Memiliki pengaturan tambahan untuk paste, seperti password, paste dihapus setelah lebih dari rentang waktu tertentu, visibility, dan juga password.
+* Build-in pengaturan ads bagi admin
+* Bisa menambahkan pages selain tampilan awal paste saja
+
+Kekurangan dari aplikasi ini adalah
+* Kurangnya pemberitahuan bagi admin saat konfigurasi krusial belum terisi, seperti setting email, sehingga rawan untuk tertinggal ketika dilakukan konfigurasi
+* Kurangnya dokumentasi untuk pengaturan custom, seperti pengaturan email, contoh penggunaan laman ads, dan juga sitemap.
+* Tema yang diterapkan tidak berlaku untuk laman admin
+* Instalasi yang menyulitkan jika diinstall di vm lokal, pada konfigurasi awal ia akan langsung redirect ke localhost tanpa port
+
 ## Referensi
 * [ComputerForGeeks - Install PHP 7.3 on Ubuntu 18.04 / Ubuntu 16.04 / Debian](https://computingforgeeks.com/how-to-install-php-7-3-on-ubuntu-18-04-ubuntu-16-04-debian/)
 * [GitHub - Paste 2.2](https://github.com/jordansamuel/PASTE)
