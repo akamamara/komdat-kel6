@@ -38,15 +38,43 @@ $ sudo mysql_secure_installation
 4. Buat user serta database baru untuk Paste
 ```
 $ sudo mysql
-CREATE DATABASE paste;
 GRANT ALL PRIVILEGES ON *.* TO 'akamamara'@'localhost' IDENTIFIED BY '213465@#Qw';
+CREATE DATABASE paste;
 ```
-5. Konfigurasi nginx
+5. Unduh folder pada github paste dan pindahkan ke dalam direktori kita. Setelah itu unzip folder yang sudah di unduh tadi 
+```
+$ unzip “paste 2.2.zip”
+```
+6. Ubah nama folder yang telah di unzip menjadi `paste2.2`
+```
+$ mv jordansamuel-PASTE-217ac17 paste2.2 
+```
+7. Copy direktori “paste2.2” ke root web
+```
+$ sudo cp -R paste2.2 /var/www/
+```
+8. Ubah otorisasi kepemilikan ke user www-data
+```
+$ sudo chown -R www-data:www-data html
+```
+9. Ubah nama folder `paste2.2` menjadi html
+```
+$ sudo mv paste2.2 html
+```
+10. Ubah agar user dan group www-data dapat melakukan read dan execute
+```
+$ sudo chmod 755 *
+```
+11. Konfigurasi nginx
 ```
 $ sudo apt update
 $ sudo apt install php-fpm
 ```
-6. Modifikasi beberapa konfigurasi dalam file `/etc/nginx/sites-available/default`
+12. Masuk ke dalam /etc/nginx/sites-available/default 
+```
+$ sudo nano /etc/nginx/sites-available/default
+```
+13. Modifikasi beberapa konfigurasi dalam `/etc/nginx/sites-available/default`
 ```
 ...
 server {
@@ -60,19 +88,33 @@ index index.php index.html index.htm index.nginx-debian.html;
 ```
 location ~ \.php$ {
     include snippets/fastcgi-php.conf;
-    fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+    fastcgi_pass unix:/run/php/php7.3-fpm.sock;
 }
 location ~ /\.ht {
     deny all;
 }
 ```
-7. Lakukan restart untuk service NGINX
+14. Lakukan restart untuk service NGINX 
 ```
 $ sudo systemctl restart nginx.service
 ```
-8. Upload seluruh file ke dalam direktori kita
+15. Kunjungi alamat IP web server kita untuk meneruskan instalasi.
+```
+localhost:8000/install/
+```
+16. Isi data yang diperlukan untuk database information
+![Instalasi - 16](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20005%20-%20Paste%202.0%20-%20Install%20-%20localhost.png)
 
+17. Setelah install nanti akan keluar tampilan untuk masuk ke akun admin
+![Instalasi - 17](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20011%20-%20Paste%202.0%20-%20Install%20-%20localhost.png)
 
+18. Selesai submit akun admin nanti akan keluar tampilan seperti gambar dibawah dan kita sudah bisa masuk ke dashboard
+![Instalasi - 18](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20014%20-%20Paste%202.0%20-%20Install%20-%20localhost.png)
+
+19. Setelah proses instalasi selesai hapus atau ganti nama direktori install agar saat mengakses web kita tidak diarahkan ke direktori tersebut
+```
+$ sudo mv install install_bak
+```
 ## Konfigurasi
 [`^gulir ke atas^`](#)
 
@@ -124,10 +166,6 @@ Digunakan untuk mengatur berapa kali update sitemap dalam kurun waktu tertentu d
 Maintenance lain di atas hanya digunakan untuk pengamatan saja, sedangkan di bagian ini aksi-aksi yang bisa dilakukan oleh admin dikumpulkan.
 ![Configuration - Task](https://github.com/akamamara/komdat-p1-kel6/blob/main/images/FireShot%20Capture%20084%20-%20Paste%20-%20Tasks%20-%20localhost.png)
 
-
-## Otomatisasi
-[`^gulir ke atas^`](#)
-
 ## Cara Pemakaian
 [`^gulir ke atas^`](#)
 
@@ -158,20 +196,6 @@ Jika menu "Settings diklik Anda akan diarahkan ke laman Profile Anda. Di sini an
 
 ## Pembahasan
 [`^gulir ke atas^`](#)
-
-PASTE ditulis dalam bahasa pemrograman PHP yang support dengan penggunaan MySQL. Paste merupakan hasil fork dari pastebin.com sebelum akhirnya dijual pada tahun 2010. Aplikasi ini memiliki kelebihan, diantaranya:
-* Build-in berbagai macam highlighting code sehingga enak dipandang mata
-* Tampilannya simple dan tidak ribet
-* Flexible untuk maintenance dan konfigurasi web yang diinginkan
-* Memiliki pengaturan tambahan untuk paste, seperti password, paste dihapus setelah lebih dari rentang waktu tertentu, visibility, dan juga password.
-* Build-in pengaturan ads bagi admin
-* Bisa menambahkan pages selain tampilan awal paste saja
-
-Kekurangan dari aplikasi ini adalah
-* Kurangnya pemberitahuan bagi admin saat konfigurasi krusial belum terisi, seperti setting email, sehingga rawan untuk tertinggal ketika dilakukan konfigurasi
-* Kurangnya dokumentasi untuk pengaturan custom, seperti pengaturan email, contoh penggunaan laman ads, dan juga sitemap.
-* Tema yang diterapkan tidak berlaku untuk laman admin
-* Instalasi yang menyulitkan jika diinstall di vm lokal, pada konfigurasi awal ia akan langsung redirect ke localhost tanpa port
 
 ## Referensi
 * [ComputerForGeeks - Install PHP 7.3 on Ubuntu 18.04 / Ubuntu 16.04 / Debian](https://computingforgeeks.com/how-to-install-php-7-3-on-ubuntu-18-04-ubuntu-16-04-debian/)
